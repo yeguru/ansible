@@ -1,0 +1,6 @@
+- name: welcome to ansible playbook
+  hosts: web
+  tasks:
+  - name: print welcome to ansible
+    ansible.builtin.debug:
+    msg: "Welcome to the ANSIBLE"
