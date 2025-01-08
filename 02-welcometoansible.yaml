@@ -1,6 +1,6 @@
-- name: hello ansible playbook
+- name: hello playbook
   hosts: web
   tasks:
-  - name: welcome to ansible
+  - name: welcome
     ansible.builtin.debug:
     msg: "Welcome to the ANSIBLE"
