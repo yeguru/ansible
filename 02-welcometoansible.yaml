@@ -3,4 +3,4 @@
   tasks:
   - name: welcome
     ansible.builtin.debug:
-    msg: "Welcome to the ANSIBLE"
+     msg: "Welcome to the ANSIBLE"
