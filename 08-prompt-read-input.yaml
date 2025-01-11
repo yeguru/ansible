@@ -1,0 +1,14 @@
+- name: to read input from the keyboard
+  hosts: local
+  connection: local
+  vars-prompt:
+  - name: COURSE
+    prompt: Please enter the Course name
+  - name: DURATION
+    prompt: Please enter the duration details
+  - name: TRAINER
+    prompt: Please enter the trainer's name
+  tasks:
+  - name: print the course details
+    ansible.builtin.debug:
+     msg: "Name of the Course: {{ COURSE }}, Course duration: {{ DURATION }}, and trainer is {{ TRAINER }} "       
