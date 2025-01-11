@@ -5,10 +5,10 @@
    GREET: "Play area"
   vars_files:
    - course.yaml 
-  vars_prompt:
-   - name: GREET
-     prompt: Please enter the input as prompt input
-     private: false     
+  # vars_prompt:
+  #  - name: GREET
+  #    prompt: Please enter the input as prompt input
+  #    private: false     
   tasks:
   - name: to print input
     # vars:
