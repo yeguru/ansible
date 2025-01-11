@@ -13,5 +13,5 @@
   - name: Print the variable at task level
     vars:
      COURSE: "Ansible"
-     ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "The course details are: Course name {{ COURSE }}, duration: {{ DURATION }}, trainer: {{ TRAINER }}"  
