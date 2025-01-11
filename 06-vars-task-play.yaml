@@ -7,11 +7,11 @@
    TRAINER: "SivaKumar Reddy"
   tasks:
   - name: Print the variables at Play level
+    vars:
+    COURSE: "Ansible"
     ansible.builtin.debug:
      msg: "The course details are: Course name {{ COURSE }}, duration: {{ DURATION }}, trainer: {{ RAINER }}"   
   tasks:
   - name: Print the variable at task level
-    vars:
-    COURSE: "Ansible"
     ansible.builtin.debug:
      msg: "The course details are: Course name {{ COURSE }}, duration: {{ DURATION }}, trainer: {{ RAINER }}"  
