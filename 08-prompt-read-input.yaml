@@ -4,9 +4,11 @@
   vars_prompt:
   - name: COURSE
     prompt: Please enter the Course name
+    private: false # to show the iput while enter
   - name: DURATION
     prompt: Please enter the duration details
-  - name: TRAINER
+    private: false # to show the iput while enter
+  - name: TRAINER  # it won't  show the iput while enter by default
     prompt: Please enter the trainer's name
   tasks:
   - name: print the course details
