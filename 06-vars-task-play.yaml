@@ -1,0 +1,17 @@
+- name: variables to priority at task level and play level
+  hosts: local
+  connection: local
+  vars:
+   COURSE: "DevSecOps"
+   DURATION: 120HRS
+   TRAINER: "SivaKumar Reddy"
+  tasks:
+  - name: Print the variables at Play level
+    ansible.builtin.debug:
+     msg: "The course details are: Course name {{ COURSE }}, duration: {{ DURATION }}, trainer: {{ RAINER }}"   
+  tasks:
+  - name: Print the variable at task level
+    vars:
+    COURSE: "Ansible"
+    ansible.builtin.debug:
+     msg: "The course details are: Course name {{ COURSE }}, duration: {{ DURATION }}, trainer: {{ RAINER }}"  

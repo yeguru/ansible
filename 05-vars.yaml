@@ -1,0 +1,13 @@
+- name: Varaibles declation
+  hosts: local
+  connections: local
+  vars: # Play level varaible declaration
+   COURSE: "Devsecops training"
+   DURATION: 120hrs
+   TRAINER: "Sivakumar reddy"
+  tasks:
+  - name: Print the variables
+    ansible.builtin.debug:
+     msg: "The course is {{ COURSE }},duration of the course is {{ DURATION }} and the trainer is {{ TRAINER }}"
+     
+     
