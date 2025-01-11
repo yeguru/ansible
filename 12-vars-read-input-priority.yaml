@@ -1,8 +1,8 @@
 - name: input read priority
   hosts: local
   connection: local
-  vars:
-   GREET: "Play area"
+  # vars:
+  #  GREET: "Play area"
   vars_files:
    - course.yaml 
   # vars_prompt:
