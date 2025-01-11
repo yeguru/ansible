@@ -1,6 +1,6 @@
 - name: Varaibles declation
   hosts: local
-  connections: local
+  connection: local
   vars: # Play level varaible declaration
    COURSE: "Devsecops training"
    DURATION: 120hrs
