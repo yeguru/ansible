@@ -1,0 +1,7 @@
+- name: To read the input values from the inventory
+  hosts: local
+  connection: local
+  tasks:
+  - name: Read input from inventory and print 
+    ansible.builtin.debug:
+     msg: "The Course details are: {{ COURSE }}, Duration of the course {{ DURATION }} and trainer is {{ TRAINER }}"
