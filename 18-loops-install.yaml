@@ -9,5 +9,5 @@
     loop:
     - gcc
     - zip
-    - lvm -2
+    - nginx
     - mysql
