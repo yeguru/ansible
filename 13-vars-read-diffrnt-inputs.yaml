@@ -12,7 +12,7 @@
     - terraform
     - docker
     - cubernetes
-  live: true
+   live: true
   tools:
    ci: jenkins
    cloud: aws
