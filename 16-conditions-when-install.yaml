@@ -5,7 +5,7 @@
   - name: to install package in RHCEL
     ansible.builtin.dnf:
      name: nginx
-     status: installed
+     state: present
     when: ansible_os_family == "RedHat"
   - name: to install package in ubuntu servers
     ansible.builtin.apt:
