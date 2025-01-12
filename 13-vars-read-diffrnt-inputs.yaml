@@ -13,10 +13,10 @@
     - docker
     - cubernetes
    live: true
-  tools:
-   ci: jenkins
-   cloud: aws
-   containerzation: docker
+   tools:
+    ci: jenkins
+    cloud: aws
+    containerzation: docker
   tasks:
   - name: to print the different mode of inputs
     ansible.builtin.debug:
