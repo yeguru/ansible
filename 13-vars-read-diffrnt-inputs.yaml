@@ -20,4 +20,4 @@
   tasks:
   - name: to print the different mode of inputs
     ansible.builtin.debug:
-     msg: "The title of course {{ course_name }}, total no of hours {{ duration }}, trainer is {{ trainer }},is it live {{ live }}, the tools covered are {{ tools }}"    
+     msg: "The title of course {{ course_name }}, total no of hours {{ duration }}, trainer is {{ trainer }},the topics covered {{ topics }}is it live {{ live }}, the tools covered are {{ tools }}"    
