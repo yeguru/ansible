@@ -10,5 +10,5 @@
   - name: to install package in ubuntu servers
     ansible.builtin.apt:
      name: nginx
-     status: installed
+     state: present
     when: ansible_os_family == "Debian"  

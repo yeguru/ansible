@@ -1,0 +1,13 @@
+- name: to check loops
+  hosts: loacal
+  connection: local
+  tasks: 
+  - name: to print the items
+    ansible.builtin.debug:
+     msg: "Hello {{ item }}"
+    loop:
+    - Suresh
+    - Ramesh
+    - Mahesh
+    - Prakash
+    
