@@ -44,7 +44,7 @@
 
   - name: print the max and min numbers from the list of numbers
     vars:
-     numbers: [1,3,5,7,9,11,13,15,17,99,2345,99999]
+     numbers: [1,2,3,4,5,6,7,8,9,17]
     ansible.builtin.debug:
      msg: "max number is {{ numbers | max  }}" 
      msg: "minimum number is {{ numbers | min  }}"      
