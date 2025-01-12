@@ -1,5 +1,5 @@
 - name: to check loops
-  hosts: loacal
+  hosts: local
   connection: local
   tasks: 
   - name: to print the items
@@ -10,4 +10,4 @@
     - Ramesh
     - Mahesh
     - Prakash
-    
+
