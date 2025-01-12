@@ -1,0 +1,14 @@
+- name: to install the required package based on the os
+  hosts: web
+  become: yes
+  tasks:
+  - name: to install package in RHCEL
+    ansible.builtin.dnf:
+     name: nginx
+     status: installed
+    when: ansible_os_family == "RedHat"
+  - name: to install package in ubuntu servers
+    ansible.builtin.apt:
+     name: nginx
+     status: installed
+    when: ansible_os_family == "Debian"  
