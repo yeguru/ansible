@@ -1,0 +1,14 @@
+- name: verify the when condition
+  hosts: local
+  connection: local
+  vars:
+   mynumber: 99
+  tasks:
+  - name: to print if the number is greater than value 9
+    ansible.builtin.debug:
+     msg: "The number is {{ mynumber }} greater 9"
+    when: mynumber > 9 
+  - name: to   print if the number is lesser than or equal the value 9
+    ansible.builtin.debug:
+     msg: "The number {{ mynumber }} is lesser than or equal the 9"
+    when: mynumber <= 9
