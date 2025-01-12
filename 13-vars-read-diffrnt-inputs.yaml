@@ -2,18 +2,18 @@
   hosts: local
   connection: local
   vars:
-   course_name: "DevSecOps"
-   duration: 120hrs
+   course_name: "DevSecOps"           #string
+   duration: 120hrs                   #number
    trainer: SivaKumar
-   topics:
+   topics:                            #list of values , represents in []
     - linux
     - shellscript
     - ansible
     - terraform
     - docker
     - cubernetes
-   live: true
-   tools:
+   live: true                         # boolean returns either true or false
+   tools:                             # map , reprsents in {}
     ci: jenkins
     cloud: aws
     containerzation: docker
