@@ -1,0 +1,6 @@
+- name: verify the shell and command modules
+  hosts: local
+  connection: local
+  tasks:
+  - name: execute the shell and command to verify the functinality
+    ansible.builtin.command: ls -ltrh >/tmp/sample-command.txt
