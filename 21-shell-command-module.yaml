@@ -1,17 +1,14 @@
 - name: verify the shell and command modules
   hosts: local
   connection: local
-  
   tasks:
   - name: execute the shell and command to verify the functinality
     ansible.builtin.shell: ls -ltrh >/tmp/sample-shell.txt
  
-  tasks:
   - name: execute the shell and command to verify the functinality
     ansible.builtin.command: ls -ltrh
     register: command_result
   
-  tasks:
   - name: to print the output of registered variable
     ansible.builtin.debug:
      msg: "{{ command_result }}"  
