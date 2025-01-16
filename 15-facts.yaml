@@ -3,4 +3,10 @@
   tasks:
   - name: print the ansible facts
     ansible.builtin.debug:
-     msg: "The facts are {{ ansible_facts }}"
+     msg: "{{ ansible_facts }}"
+# - name: print the facts
+#   hosts: web
+#   tasks:
+#   - name: print the facts
+#     ansible.builtin.debug:
+#       msg: "{{ ansible_facts }}"     
