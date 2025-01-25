@@ -31,6 +31,8 @@
      msg: "Hello about course details are {{ course | items2dict }}"
 
   - name: converts into lowercase letters
+    tags:
+    - uppertolower 
     vars:
      name: "Rajabhushanam.yeguru"
     ansible.builtin.debug:
@@ -38,7 +40,7 @@
 
   - name: converts into uppercase letters
     tags:
-    - uppertolower 
+    - lowertoupper 
     vars:
      name: "Rajabhushanam.yeguru"
     ansible.builtin.debug:
