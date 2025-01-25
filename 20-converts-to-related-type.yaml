@@ -37,6 +37,8 @@
      msg: "My name is {{ name | lower }}"
 
   - name: converts into uppercase letters
+    tags:
+    - uppertolower
     vars:
      name: "Rajabhushanam.yeguru"
     ansible.builtin.debug:
