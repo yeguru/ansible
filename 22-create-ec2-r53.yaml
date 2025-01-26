@@ -30,6 +30,10 @@
     register: ec2_info
   - name: get info about ec2 info
     ansible.builtin.debug:
-     msg: "{{ ec2_info }}"   
+     msg: "{{ ec2_info }}"
+  - name: get info about private ip adress
+    ansible.builtin.debug:
+     msg: "{{ item.item}}:{{item.instances[0].private_ip_address}}"
+    loop: "{{ ec2_info.results}}"       
 
 
